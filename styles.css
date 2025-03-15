@@ -1,0 +1,7 @@
+label {
+    color: #666;
+}
+
+.is-invalid {
+    border-color: lightcoral;
+}
