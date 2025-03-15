@@ -87,9 +87,9 @@ function reset() {
 function calculate() {
     reset()
 
-    const weight = document.querySelector("#weight").value;
+    const weight = document.querySelector("#weight").value.replace(",", ".");
 
-    if (weight === "" || isNaN(weight)) {
+    if (weight === "" || isNaN(weight) || weight <= 0) {
         document.querySelector("#weight").classList.add("is-invalid");
         return;
     }
