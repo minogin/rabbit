@@ -33,6 +33,7 @@ const data = {
     "gabapentin": ["Габапентин (Конвалис)", 15, 300, "caps", "peroral", "12", ""],
     "espumizan": ["Эспумизан", 1, 1, "ml", "peroral", "4", ""],
     "smekta": ["Смекта", 0.8, 1, "ml", "peroral", "4", "1 пакет развести в 20 мл воды"],
+    "heptral": ["Гептрал", 50, 400, "tab", "peroral", "12", ""],
 }
 
 const drugs = [
@@ -51,6 +52,7 @@ const drugs = [
     "gabapentin",
     "espumizan",
     "smekta",
+    "heptral"
 ]
 
 window.onload = function () {
