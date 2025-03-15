@@ -89,7 +89,7 @@ function calculate() {
 
     const weight = document.querySelector("#weight").value.replace(",", ".");
 
-    if (weight === "" || isNaN(weight) || weight <= 0) {
+    if (weight === "" || isNaN(weight) || weight <= 0 || weight > 10) {
         document.querySelector("#weight").classList.add("is-invalid");
         return;
     }
