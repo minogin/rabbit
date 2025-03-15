@@ -107,9 +107,10 @@ function calculate() {
     const method = methods[record[4]]
     const multiplicity = multiplicities[record[5]]
     const note = record[6]
-    const result = weight * doze / concentration;
+    const result = (weight * doze) / concentration
+    const resultRounded = Math.round((result + Number.EPSILON) * 100) / 100;
 
     document.querySelector("#result-container").classList.remove("d-none");
     document.querySelector("#result-container").classList.add("d-block");
-    document.querySelector("#result").innerHTML = result + " " + unit + " " + method + " " + multiplicity + (note !== "" ? " (" + note + ")" : "");
+    document.querySelector("#result").innerHTML = resultRounded + " " + unit + " " + method + " " + multiplicity + (note !== "" ? " (" + note + ")" : "");
 }
